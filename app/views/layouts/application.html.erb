@@ -10,6 +10,17 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container-fluid bg-light d-flex justify-content-between align-items-center p-3">
+      <h5><%= link_to 'Wikinomous', articles_path, class: "text-decoration-none" %></h5>
+      <div><%= link_to 'New Article', new_article_path, class: "btn btn-dark" %></div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

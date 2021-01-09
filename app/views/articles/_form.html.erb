@@ -1,0 +1,5 @@
+<%= simple_form_for(@article) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :content, :input_html => {:rows => 5}, :as => :text, class: "form-control", wrapper_html: { id: 'contactTextarea' } %>
+  <%= f.submit 'Create article' %>
+<% end %>
